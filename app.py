@@ -10,7 +10,11 @@ for x in range(809):
    print(data[x]["name"])
    x+=1
 # Add a language choice feature and print the pokemons name based on the user input
-
+def names(language):
+   for x in range(809):
+      print(data[x]["name"][language])
+language = {'english', 'french', 'chinese', 'japanese'}
+language = input("What language do you want.")
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inforDevelop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
 
 
