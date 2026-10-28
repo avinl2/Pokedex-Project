@@ -8,8 +8,7 @@ data = json.load(pokedex)
 #for x in range(809):
    #x<809
    #print(data[x]["name"])
-   #x+= 
-   #  1
+   #x+=1
 # Add a language choice feature and print the pokemons name based on the user input
 def characters(language):
    for x in range(809):
