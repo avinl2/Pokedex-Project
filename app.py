@@ -9,17 +9,20 @@ data = json.load(pokedex)
    #x<809
    #print(data[x]["name"])
 # Add a language choice feature and print the pokemons name based on the user input
-def characters(language):
-   for x in range(809):
-      print(data[x]["name"][language])
-language = input("What language do you want. (french, english, japanese, or chinese)")
-characters(language)
-# Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inforDevelop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
-def choice(data):
-   for item in data:
-      if choice in data:
-         print(data["name"])
-choice = input("What type of pokemon do you want:")
-choice(data)
+#def characters(language):
+   #for x in range(809):
+      #print(data[x]["name"][language])
+#language = input("What language do you want?")
+#characters(language)
+# Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user.
+language = input("What language do you want?")
+def search(pokemon_type):
+   for pokemon in data:
+      if pokemon_type in pokemon["type"]:
+         print(pokemon["name"][language])
+pokemon_type = input("What pokemon type do you want?")
+search(pokemon_type)
+# Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found.
+
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
 
