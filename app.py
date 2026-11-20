@@ -49,10 +49,9 @@ def locate(move):
    for choice in data:
       if move in choice["name"][language]:
          action = choice["type"]
-   for i in range(len(action)):
+   for x in range(len(action)):
       for i in range(len(collection)):
-         if action[i] in collection[i]["type"]:
+         if action[x] in collection[i]["type"]:
             print(collection[i]["ename"])
 move = input("What pokemon moves are you trying to discover?")
 locate(move)
-#fix this
